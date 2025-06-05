@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.kisansathi.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        
+        <action
+            android:id="@+id/action_home_to_chatbot"
+            app:destination="@id/chatFragment" />
+        
+        <action
+            android:id="@+id/action_home_to_disease_detection"
+            app:destination="@id/diseaseDetectionFragment" />
+        
+        <action
+            android:id="@+id/action_home_to_weather_market"
+            app:destination="@id/weatherMarketFragment" />
+        
+        <action
+            android:id="@+id/action_home_to_expert_consultation"
+            app:destination="@id/expertConsultationFragment" />
+        
+        <action
+            android:id="@+id/action_home_to_community"
+            app:destination="@id/communityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.kisansathi.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/diseaseDetectionFragment"
+        android:name="com.example.kisansathi.DiseaseDetectionFragment"
+        android:label="Disease Detection"
+        tools:layout="@layout/fragment_disease_detection" />
+
+    <fragment
+        android:id="@+id/weatherMarketFragment"
+        android:name="com.example.kisansathi.WeatherMarketFragment"
+        android:label="Weather Market"
+        tools:layout="@layout/fragment_weather_market" />
+
+    <fragment
+        android:id="@+id/expertConsultationFragment"
+        android:name="com.example.kisansathi.ExpertConsultationFragment"
+        android:label="Expert Consultation"
+        tools:layout="@layout/fragment_expert_consultation" />
+
+    <fragment
+        android:id="@+id/communityFragment"
+        android:name="com.example.kisansathi.CommunityFragment"
+        android:label="Community"
+        tools:layout="@layout/fragment_community" />
+
+</navigation>

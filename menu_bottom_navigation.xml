@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="ہوم" />
+    
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_bot"
+        android:title="چیٹ بوٹ" />
+    
+    <item
+        android:id="@+id/diseaseDetectionFragment"
+        android:icon="@drawable/ic_camera"
+        android:title="تشخیص" />
+    
+    <item
+        android:id="@+id/weatherMarketFragment"
+        android:icon="@drawable/ic_weather"
+        android:title="موسم" />
+    
+    <item
+        android:id="@+id/communityFragment"
+        android:icon="@drawable/ic_community"
+        android:title="کمیونٹی" />
+</menu>
